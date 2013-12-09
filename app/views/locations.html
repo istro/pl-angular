@@ -1,6 +1,5 @@
-<button ng-click='getit()'>Fetch!</button>
 <ul>
-  <li ng-repeat='loc in locations'>
-    {{loc}}
+  <li ng-repeat='each in locations'>
+    <a href='../#/location/{{each.id}}'>{{each.name}}</a>
   </li>
 </ul>
