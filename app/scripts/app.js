@@ -16,12 +16,11 @@ angular.module('purelightsApp', [
         templateUrl: 'views/locations.html',
         controller: 'LocationsCtrl'
       })
-      .when('/location/:id', {
+      .when('/locations/:id', {
         templateUrl: 'views/location.html',
         controller: 'LocationCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
-
   }]);
