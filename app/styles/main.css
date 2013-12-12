@@ -1,7 +1,7 @@
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* make divs evident for dev purposes */
+body, div {
+  margin: 10px;
+  border: 1px dashed gray;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

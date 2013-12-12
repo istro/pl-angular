@@ -24,3 +24,16 @@ angular.module('purelightsApp', [
         redirectTo: '/'
       });
   }]);
+
+angular.module('purelightsApp')
+  .service('sharedScope', function(){
+    var locations = [];
+    return {
+      setLocations: function(data){
+        locations = data;
+      },
+      getLocations: function(){
+        return locations;
+      }
+    };
+  });
